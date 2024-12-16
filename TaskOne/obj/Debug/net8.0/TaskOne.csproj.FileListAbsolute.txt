@@ -1,0 +1,14 @@
+D:\Code\laba3\TaskOne\bin\Debug\net8.0\TaskOne.exe
+D:\Code\laba3\TaskOne\bin\Debug\net8.0\TaskOne.deps.json
+D:\Code\laba3\TaskOne\bin\Debug\net8.0\TaskOne.runtimeconfig.json
+D:\Code\laba3\TaskOne\bin\Debug\net8.0\TaskOne.dll
+D:\Code\laba3\TaskOne\bin\Debug\net8.0\TaskOne.pdb
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.AssemblyInfoInputs.cache
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.AssemblyInfo.cs
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.csproj.CoreCompileInputs.cache
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.dll
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\refint\TaskOne.dll
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.pdb
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\TaskOne.genruntimeconfig.cache
+D:\Code\laba3\TaskOne\obj\Debug\net8.0\ref\TaskOne.dll

@@ -1,0 +1,2 @@
+D:\Code\laba3\TaskOne\text-files\10.txt: 0
+D:\Code\laba3\TaskOne\text-files\11.txt: -3567
