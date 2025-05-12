@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -21,13 +20,13 @@ namespace WpfApp1
                 !int.TryParse(StepTextBox.Text, out int step) ||
                 step <= 0 || from > to)
             {
-                MessageBox.Show("Перевірте правильність введення даних.");
+                MessageBox.Show("Please check the input data.");
                 return;
             }
 
             for (int i = from; i <= to; i += step)
             {
-                var btn = new Button
+                var button = new Button
                 {
                     Content = i.ToString(),
                     Margin = new Thickness(3),
@@ -35,9 +34,8 @@ namespace WpfApp1
                     Tag = i
                 };
 
-                btn.Click += NumberButton_Click;
-
-                ButtonsPanel.Children.Add(btn);
+                button.Click += NumberButton_Click;
+                ButtonsPanel.Children.Add(button);
             }
         }
 
@@ -45,7 +43,7 @@ namespace WpfApp1
         {
             if (!int.TryParse(MultipleTextBox.Text, out int multiple) || multiple == 0)
             {
-                MessageBox.Show("Введіть коректне число.");
+                MessageBox.Show("Please enter a valid number.");
                 return;
             }
 
@@ -53,8 +51,8 @@ namespace WpfApp1
 
             for (int i = ButtonsPanel.Children.Count - 1; i >= 0; i--)
             {
-                if (ButtonsPanel.Children[i] is Button btn &&
-                    int.TryParse(btn.Content.ToString(), out int value) &&
+                if (ButtonsPanel.Children[i] is Button button &&
+                    int.TryParse(button.Content.ToString(), out int value) &&
                     value % multiple == 0)
                 {
                     ButtonsPanel.Children.RemoveAt(i);
@@ -64,29 +62,31 @@ namespace WpfApp1
 
             if (removedCount == 0)
             {
-                    MessageBox.Show("Жодної кннопок не було видалено");
+                MessageBox.Show("No buttons were removed.");
             }
         }
 
         private bool IsPrime(int n)
         {
             if (n < 2) return false;
-            if (n == 2) return true;
-            if (n % 2 == 0) return false;
+            if (n == 2 || n == 3) return true;
+            if (n % 2 == 0 || n % 3 == 0) return false;
 
-            for (int i = 3; i * i <= n; i += 2)
+            int sqrtN = (int)Math.Sqrt(n);
+            for (int i = 5; i <= sqrtN; i += 6)
             {
-                if (n % i == 0) return false;
+                if (n % i == 0 || n % (i + 2) == 0)
+                    return false;
             }
             return true;
         }
 
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button btn && int.TryParse(btn.Content.ToString(), out int number))
+            if (sender is Button button && int.TryParse(button.Content.ToString(), out int number))
             {
-                MessageBox.Show(IsPrime(number) ? $"{number} — це просте число." : $"{number} — це складене число.");
+                MessageBox.Show(IsPrime(number) ? $"{number} is a prime number." : $"{number} is a composite number.");
             }
-        } 
+        }
     }
 }

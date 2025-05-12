@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Чи все Вас влаштовує?" Height="300" Width="400">
+    <Canvas x:Name="MainCanvas">
+        <Button x:Name="YesButton" Content="Так" Width="100" Height="50" Click="YesButton_Click"
+                Canvas.Left="100" Canvas.Top="100"/>
+        <Button x:Name="NoButton" Content="Ні" Width="100" Height="50" MouseEnter="NoButton_MouseEnter"
+                Canvas.Left="220" Canvas.Top="100"/>
+    </Canvas>
+</Window>

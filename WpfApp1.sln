@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{AE7615AF-588F-4A63-A7A2-445789B8036C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{EF10DDD0-4726-42B3-8A24-5233B1797ECE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE7615AF-588F-4A63-A7A2-445789B8036C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE7615AF-588F-4A63-A7A2-445789B8036C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE7615AF-588F-4A63-A7A2-445789B8036C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF10DDD0-4726-42B3-8A24-5233B1797ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF10DDD0-4726-42B3-8A24-5233B1797ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF10DDD0-4726-42B3-8A24-5233B1797ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF10DDD0-4726-42B3-8A24-5233B1797ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
